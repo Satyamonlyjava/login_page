@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(110, 110, 110);
+}
+
+nav {
+  position: relative;
+  width: 500px;
+  height: 60px;
+  background-color: #000000;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  position: relative;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0 25px;
+  z-index: 1;
+}
+
+nav span {
+  background: linear-gradient(90deg, #000000, #ffffff);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+nav a:nth-child(1):hover ~ span {
+  left: 0;
+}
+nav a:nth-child(2):hover ~ span {
+  left: 100px;
+}
+nav a:nth-child(3):hover ~ span {
+  left: 200px;
+  width: 107px;
+}
+nav a:nth-child(4):hover ~ span {
+  left: 300px;
+}
+nav a:nth-child(5):hover ~ span {
+  left: 400px;
+}
